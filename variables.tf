@@ -23,3 +23,33 @@ variable "igw_tags" {
     description = "you can provide ur custom tags"
   
 }
+variable "public_cidr_blocks"{
+    type =list 
+    description = "provide cidr value"
+}
+variable "subnet_tags"{
+    type=map 
+    default = {}
+    description = "provide subnet tags"
+}
+variable private_cidrs{
+    type=list 
+    description = "provide private subnet cidr"
+}
+variable database_cidrs{
+    type=list 
+    description = "provide private subnet cidr"
+}
+
+variable "route_table_tags" {
+    type = map 
+    default = {}
+    description = "provide ur routetable tags"
+  
+}
+variable "eip_tags" {
+    type = map 
+    default = {}
+    description = "provide ur routetable tags"
+  
+}
