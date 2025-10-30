@@ -53,3 +53,7 @@ variable "eip_tags" {
     description = "provide ur routetable tags"
   
 }
+variable "is_peering_reuired"{
+    type =bool 
+    default = false
+}
