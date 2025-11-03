@@ -55,5 +55,5 @@ variable "eip_tags" {
 }
 variable "is_peering_reuired"{
     type =bool 
-    default = true
+    default = false
 }
